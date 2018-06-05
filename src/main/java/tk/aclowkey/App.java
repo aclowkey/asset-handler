@@ -8,7 +8,7 @@ import org.jooby.handlers.AssetHandler;
  */
 public class App extends Jooby {
     App() {
-        //assets("**", new AssetHandler("/")).name("Asserts");
+        assets("**", new AssetHandler("/")).name("Asserts");
         use(IndexRoute.class);
         port(9000);
     }
